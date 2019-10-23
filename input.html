@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- //This will turn Binary to Hexadecimal and ASCII or vise versa -->
+<html lang="en" dir="ltr">
+  <head>
+    <title>B/H/A converter</title>
+    <script src="test.js"> </script>
+  </head>
+  <body>
+
+<!-- //Binary -->
+    <div>
+      <h2>Binary</h2>
+      <input id="bin"><br />
+      <button onclick="binToAsc(document.getElementById('bin').value)">Convert to ASCII</button><br />
+      <button onclick="binToHex(document.getElementById('bin').value)">Convert to Hexadecimal</button><br />
+      <span id="binOutput"></span>
+    </div>
+
+<!-- Hexadecimal -->
+    <div>
+      <h2>Hexadecimal</h2>
+      <input id="hex"><br />
+      <button onclick="hexToAsc(document.getElementById('hex').value)">Convert to ASCII</button><br />
+      <button onclick="hexToBin(document.getElementById('hex').value)">Convert to Binary</button><br />
+      <span id="hexOutput"></span>
+    </div>
+
+<!-- //ASCII -->
+    <div>
+      <h2>ASCII</h2>
+      <input id="asc"><br />
+      <button onclick="ascToBin(document.getElementById('asc').value)">Convert to Binary</button><br />
+      <button onclick="ascToHex(document.getElementById('asc').value)">Convert to Hexadecimal</button><br />
+      <span id="ascOutput"></span>
+    </div>
+  </body>
+</html>
